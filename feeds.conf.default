@@ -1,6 +1,8 @@
 src-git packages https://github.com/openwrt/packages.git;master
 src-git luci https://github.com/openwrt/luci.git;master
 src-git luci https://github.com/vernesong/OpenClash.git;master
-src-git packages https://github.com/mufeng05/turboacc.git;mainin
+src-git packages https://github.com/immortalwrt/packages.git;master
+src-git luci https://github.com/immortalwrt/luci.git;master
+
 
 
