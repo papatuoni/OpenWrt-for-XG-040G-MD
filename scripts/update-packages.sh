@@ -88,6 +88,7 @@ echo "Done removing sing-box from feeds"
 
 # HomeProxy (代理软件) - 使用第5个参数指定额外要删除的包名
 UPDATE_PACKAGE "homeproxy" "immortalwrt/homeproxy" "master"
+UPDATE_PACKAGE "OpenClash" "vernesong/OpenClash" "master"
 
 # Argon 主题
 UPDATE_PACKAGE "luci-theme-argon" "jerrykuku/luci-theme-argon" "master"
