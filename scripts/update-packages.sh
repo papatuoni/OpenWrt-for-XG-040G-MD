@@ -32,7 +32,8 @@ UPDATE_PACKAGE() {
 
 	# 克隆 GitHub 仓库
 	git clone --depth=1 --single-branch --branch "$PKG_BRANCH" "https://github.com/$PKG_REPO.git"
-
+    #luci-app-turboacc
+    curl -sSL https://raw.githubusercontent.com/mufeng05/turboacc/main/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
 	if [ ! -d "$REPO_NAME" ]; then
 		echo "ERROR: Failed to clone $PKG_REPO"
 		return 1
@@ -86,14 +87,12 @@ rm -rf ../feeds/packages/net/sing-box
 rm -rf ../package/feeds/packages/sing-box
 echo "Done removing sing-box from feeds"
 
-#luci-app-turboacc
-curl -sSL https://raw.githubusercontent.com/mufeng05/turboacc/main/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
-
 # HomeProxy (代理软件) - 使用第5个参数指定额外要删除的包名
 UPDATE_PACKAGE "homeproxy" "immortalwrt/homeproxy" "master"
 UPDATE_PACKAGE "OpenClash" "vernesong/OpenClash" "master"
 UPDATE_PACKAGE "turboacc" "mufeng05/turboacc" "main"
-
+UPDATE_PACKAGE "netspeedtest" "sirpdboy/netspeedtest" "master"
+UPDATE_PACKAGE "luci-app-ddns-go" "sirpdboy/luci-app-ddns-go" "master"
 # Argon 主题
 UPDATE_PACKAGE "luci-theme-argon" "jerrykuku/luci-theme-argon" "master"
 UPDATE_PACKAGE "luci-app-argon-config" "jerrykuku/luci-app-argon-config" "master"
