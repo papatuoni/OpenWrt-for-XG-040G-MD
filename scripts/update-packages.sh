@@ -32,8 +32,8 @@ UPDATE_PACKAGE() {
 
 	# 克隆 GitHub 仓库
 	git clone --depth=1 --single-branch --branch "$PKG_BRANCH" "https://github.com/$PKG_REPO.git"
-    #luci-app-turboacc
-    curl -sSL https://raw.githubusercontent.com/mufeng05/turboacc/main/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
+	#luci-app-turboacc
+	curl -sSL https://raw.githubusercontent.com/mufeng05/turboacc/main/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
 	if [ ! -d "$REPO_NAME" ]; then
 		echo "ERROR: Failed to clone $PKG_REPO"
 		return 1
