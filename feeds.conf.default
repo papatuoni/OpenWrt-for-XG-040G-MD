@@ -3,7 +3,7 @@ src-git luci https://github.com/openwrt/luci.git;master
 src-git luci https://github.com/vernesong/OpenClash.git;master
 src-git packages https://github.com/immortalwrt/packages.git;master
 src-git luci https://github.com/immortalwrt/luci.git;master
-src-git luci https://github.com/sirpdboy/luci-app-ddns-go.git;master 
-src-git luci https://github.com/sirpdboy/luci-app-netspeedtest.git;master
+src-git luci https://github.com/sirpdboy/luci-app-ddns-go.git;main
+
 
 
