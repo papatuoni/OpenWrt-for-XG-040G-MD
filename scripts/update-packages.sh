@@ -91,6 +91,7 @@ echo "Done removing sing-box from feeds"
 UPDATE_PACKAGE "homeproxy" "immortalwrt/homeproxy" "master"
 UPDATE_PACKAGE "OpenClash" "vernesong/OpenClash" "master"
 UPDATE_PACKAGE "luci-app-ddns-go" "sirpdboy/luci-app-ddns-go" "main"
+UPDATE_PACKAGE "luci-app-turboacc" "immortalwrt/turboacc" "master"
 # Argon 主题
 UPDATE_PACKAGE "luci-theme-argon" "jerrykuku/luci-theme-argon" "master"
 UPDATE_PACKAGE "luci-app-argon-config" "jerrykuku/luci-app-argon-config" "master"
